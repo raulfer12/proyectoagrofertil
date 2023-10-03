@@ -1,0 +1,18 @@
+:root{
+  --primary_text: #000000;
+  --primary_bg: #3E1000;
+  --primary_bg300: #653719;
+  --secondary_text: #ffffff;
+  --secondary_bg: #fbff00;
+  --seconady_bg300: #fbff00;
+
+  --primary_action_bg: #ceb035;
+  --primary_action_tx: #fff;
+  --secondary_action_bg: #653719;
+  --secondary_action_txt: #fff;
+
+  --alert: #c21010;
+  --warning: #bb980d;
+  --info: #3236ae;
+
+}
