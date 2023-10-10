@@ -97,7 +97,7 @@ class CatalogoProducts extends \Controllers\PublicController
             $_data[$key]["ProductoPrecioVenta"] = number_format($precioFinal, 2);
         }
 
-        if ($_data) 
+        if ($_data)
         {
             $this->Products = $_data;
         }
