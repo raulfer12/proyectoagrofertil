@@ -45,6 +45,11 @@
               </a>
             </li>
             <li class="nav-item">
+              <a class="nav-link text-white" href="index.php?page=catalogoproducts&PageIndex=1">
+                <i class="fas fa-list-alt mx-2"></i>&nbsp;Productos
+              </a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link text-white" href="index.php?page=sec_login">
                 <i class="fas fa-sign-in-alt"></i>&nbsp;Iniciar Sesión
               </a>

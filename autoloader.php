@@ -4,7 +4,7 @@
  *
  * @category Public
  * @package  Controllers
- * @author   Orlando J Betancourth <orlando.betancourth@gmail.com>
+ * @author   Raul F. Banegas
  * @license  MIT http://
  * @version  CVS:1.0.0
  * @link     http://
