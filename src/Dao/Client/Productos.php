@@ -11,7 +11,7 @@ class Productos extends \Dao\Table
         GROUP BY p.ProductoId ORDER BY p.ProductoId DESC LIMIT 8;", array());
     }
 
-    public static function getProducCount()
+    public static function getProductCount()
     {
         $sqlstr = "SELECT COUNT(ProductoId) as 'Total' FROM agrofertil.productos
         WHERE ProductoStock > 0 AND ProductoEst = 'ACT' ;";
