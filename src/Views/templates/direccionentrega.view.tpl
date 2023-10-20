@@ -14,6 +14,9 @@
         <div class="card-body"> 
             <form class="form" method="post" action="index.php?page=direccionentrega">
 
+                <label>Campos con * son de caracter obligatorio</label>
+                  <br/>
+
                 <div class="form-group col-md-5">
                     <label for="DireccionDepartamento">Departamento *</label>
                     <input type="text" class="form-control" id="DireccionDepartamento" name="DireccionDepartamento" value="{{DireccionDepartamento}}" maxlength="30" placeholder="Departamento en el que reside">
@@ -41,7 +44,7 @@
                     <label for="NumeroCelular">Número de Teléfono o Celular *</label>
                     <br/>
                     <input type="text" class="form-control" id="NumeroTelefonoCelular" name="NumeroTelefonoCelular" value="{{NumeroTelefonoCelular}}" maxlength="80" placeholder="Número de télefono o celular">
-                </div>   
+                </div> 
 
                 {{if hasErrors}}
                 <section>
