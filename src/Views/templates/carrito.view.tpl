@@ -56,7 +56,7 @@
     <form method="GET" action="index.php">
         <div class="form-group">
             <input type="hidden" name="page" value="direccionentrega">
-            <button type="submit" class="btn primary my-4">Realizar transacción</button>
+            <button type="submit" class="btn primary my-4">Realizar Pedido</button>
         </div>
     </form>
     {{endif Items}}

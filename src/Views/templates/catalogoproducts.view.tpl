@@ -33,7 +33,7 @@
                 <li class="page-item {{PreviousState}}">
                     <a class="page-link" href="index.php?page=catalogoproducts&PageIndex={{Previous}}" aria-label="Previous">
                         <span aria-hidden="true">&laquo;</span>
-                        <span class="sr-only">Previous</span>
+                        <span class="sr-only">Anterior</span>
                     </a>
                 </li>
 
@@ -44,7 +44,7 @@
                 <li class="page-item {{NextState}}">
                     <a class="page-link" href="index.php?page=catalogoproducts&PageIndex={{Next}}" aria-label="Next">
                         <span aria-hidden="true">&raquo;</span>
-                        <span class="sr-only">Next</span>
+                        <span class="sr-only">Siguiente</span>
                     </a>
                 </li>
             </ul>
