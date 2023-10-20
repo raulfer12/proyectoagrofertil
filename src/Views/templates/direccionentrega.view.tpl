@@ -53,7 +53,7 @@
                 </section>
                 {{endif hasErrors}}
 
-                <button type="submit" class="btn primary mt-2 ml-3" id="btnAceptar" name="btnAceptar">Aceptar</button>
+                <button type="submit" class="btn primary mt-2 ml-3" id="btnAceptar" name="btnAceptar">Realizar Pedido</button>
             </form>
         </div>
     </div>

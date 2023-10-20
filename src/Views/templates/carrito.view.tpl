@@ -56,7 +56,13 @@
     <form method="GET" action="index.php">
         <div class="form-group">
             <input type="hidden" name="page" value="direccionentrega">
-            <button type="submit" class="btn primary my-4">Realizar Pedido</button>
+            <button type="submit" class="btn primary my-4">Recoger orden en establecimiento</button>
+        </div>
+    </form>
+    <form method="GET" action="index.php">
+        <div class="form-group">
+            <input type="hidden" name="page" value="direccionentrega">
+            <button type="submit" class="btn primary my-4">Realizar orden a domicilio</button>
         </div>
     </form>
     {{endif Items}}
