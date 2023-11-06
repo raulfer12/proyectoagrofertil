@@ -17,16 +17,16 @@
                 <h6>Campos con * son de caracter obligatorio</h6>
                   <br/>
 
-                <div class="form-group col-md-5">
+               <!-- <div class="form-group col-md-5">
                     <label for="DireccionDepartamento">Departamento *</label>
                     <input type="text" class="form-control" id="DireccionDepartamento" name="DireccionDepartamento" value="{{DireccionDepartamento}}" maxlength="30" placeholder="Departamento en el que reside">
-                </div>
+                </div>-->
 
-                <div class="form-group col-md-5">
+               <!-- <div class="form-group col-md-5">
                     <label for="DireccionCiudad">Ciudad *</label>
                     <br/>
                     <input type="text" class="form-control" id="DireccionCiudad" name="DireccionCiudad" value="{{DireccionCiudad}}" maxlength="30" placeholder="Ciudad en que reside">
-                </div>
+                </div>-->
 
                 <div class="form-group col-md-12">
                     <label for="Direccion1">Dirección 1 *</label>

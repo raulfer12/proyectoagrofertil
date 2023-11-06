@@ -71,8 +71,8 @@ class Carrito extends \Controllers\PublicController
 
             $this->Items[$key]["ProdPrecioSinImpuesto"] = number_format($precioSinImpuesto, 2);
             $this->Items[$key]["ProdImpuesto"] = number_format(($value["ProductoPrecioVenta"] - $precioSinImpuesto), 2);
-            $this->Subtotal += $precioSinImpuesto;
-            $this->Total += $value["ProductoPrecioVenta"];
+            $this->Subotal += $precioSinImpuesto;
+            $this->Total += $value["TotalProducto"];
         }
 
         $this->Subtotal = number_format($this->Subtotal, 2);
@@ -111,7 +111,7 @@ class Carrito extends \Controllers\PublicController
 
             $this->Items[$key]["ProdPrecioSinImpuesto"] = number_format($precioSinImpuesto, 2);
             $this->Items[$key]["ProdImpuesto"] = number_format(($value["ProductoPrecioVenta"] - $precioSinImpuesto), 2);
-            $this->Subtotal += $precioSinImpuesto;
+            $this->Subotal += $precioSinImpuesto;
             $this->Total += $value["TotalProducto"];
         }
 

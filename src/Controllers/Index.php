@@ -43,7 +43,7 @@ class Index extends PublicController
                 $dataview["items"][$key]["ProductoNombre"] = substr($string, 0, strrpos($string, ' ', $offset)) . '...';
             }
 
-            $precioFinal = ($value["ProductoPrecioVenta"]) + ($value["ProductoPrecioVenta"] * 0.15);
+            $precioFinal = ($value["ProductoPrecioVenta"]);
             $dataview["items"][$key]["ProductoPrecioVenta"] = number_format($precioFinal, 2);
         }
 

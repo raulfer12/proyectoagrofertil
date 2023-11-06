@@ -1,4 +1,4 @@
-<?php 
+<?php
 
     namespace Utilities;
 
@@ -6,7 +6,7 @@
     {
         public static function CalcularPrecioSinImpuesto($precioConImpuesto)
         {
-            return ($precioConImpuesto / 1.15);
+            return ($precioConImpuesto /1.15);
         }
     }
 ?>

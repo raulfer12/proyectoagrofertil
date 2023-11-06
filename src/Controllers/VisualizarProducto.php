@@ -51,7 +51,7 @@ class VisualizarProducto extends \Controllers\PublicController
             $this->ProductoId = $_data["ProductoId"];
             $this->ProductoNombre = $_data["ProductoNombre"];
             $this->ProductoDescripcion = $_data["ProductoDescripcion"];
-            $precioFinal = ($_data["ProductoPrecioVenta"]) + ($_data["ProductoPrecioVenta"] * 0.15);
+            $precioFinal = ($_data["ProductoPrecioVenta"]);
             $this->ProductoPrecioVenta = number_format($precioFinal, 2);
             $this->ProductoStock = $_data["ProductoStock"];
             $this->PrimaryMediaDoc = $_data["MediaDoc"];

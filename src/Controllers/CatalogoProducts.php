@@ -93,7 +93,7 @@ class CatalogoProducts extends \Controllers\PublicController
                 $_data[$key]["ProductoDescripcion"] = substr($string, 0, strrpos($string, ' ', $offset)) . '...';
             }
 
-            $precioFinal = ($value["ProductoPrecioVenta"]) + ($value["ProductoPrecioVenta"] * 0.15);
+            $precioFinal = ($value["ProductoPrecioVenta"]);
             $_data[$key]["ProductoPrecioVenta"] = number_format($precioFinal, 2);
         }
 

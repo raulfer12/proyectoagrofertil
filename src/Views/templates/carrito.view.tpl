@@ -5,9 +5,9 @@
             <tr>
                 <th class="text-center align-middle">Descripción</th>
                 <th class="text-center align-middle">Cantidad</th>
-                <th class="text-center align-middle">Precio Unitario sin Impuesto</th>
-                <th class="text-center align-middle">Impuesto Calculado</th>
-                <th class="text-center align-middle">Precio Unitario con Impuesto</th>
+                <th class="text-center align-middle">Precio Unitario</th>
+                <!--<th class="text-center align-middle">Impuesto Calculado</th>-->
+                <!--<th class="text-center align-middle">Precio Unitario con Impuesto</th>-->
                 <th class="text-center align-middle">Total</th>
                 <th width="15%" class="text-center align-middle">Imagen</th>
                 <th></th>
@@ -18,9 +18,9 @@
             <tr>
                 <td class="align-middle">{{ProductoNombre}}</td>
                 <td class="text-center align-middle">{{ProdCantidad}}</td>
-                <td class="text-center align-middle">{{ProdPrecioSinImpuesto}}</td>
-                <td class="text-center align-middle">{{ProdImpuesto}}</td>
                 <td class="text-center align-middle">{{ProductoPrecioVenta}}</td>
+                <!--<td class="text-center align-middle">{{ProdImpuesto}}</td>-->
+                <!--<td class="text-center align-middle">{{ProductoPrecioVenta}}</td>-->
                 <td class="text-center align-middle">{{TotalProducto}}</td>
                 <td width="15%" class="text-center align-middle">
                     <div class="border">
@@ -41,10 +41,10 @@
     </table>
 
     <form class="d-flex flex-column align-items-center">
-        <div class="form-group col-md-2 center">
+        <!--<div class="form-group col-md-2 center">
             <label for="CarritoSubtotal" class="font-weight-bold">Subtotal</label>
             <input type="text" readonly class="form-control" id="CarritoSubtotal" value="{{Subtotal}}">
-        </div>
+        </div>-->
         
         <div class="form-group col-md-2 center">
             <label for="CarritoTotal" class="font-weight-bold">Total</label>
