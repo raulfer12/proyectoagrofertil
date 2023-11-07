@@ -8,7 +8,7 @@
                 <th class="text-center align-middle">Precio Unitario</th>
                 <!--<th class="text-center align-middle">Impuesto Calculado</th>-->
                 <!--<th class="text-center align-middle">Precio Unitario con Impuesto</th>-->
-                <th class="text-center align-middle">Total</th>
+                <th class="text-center align-middle">Total por Producto</th>
                 <th width="15%" class="text-center align-middle">Imagen</th>
                 <th></th>
             </tr>
