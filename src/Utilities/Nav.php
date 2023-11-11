@@ -81,7 +81,7 @@ class Nav {
         if($usuario["UsuarioTipo"] === "PBL")
         {
             $clientNAVIGATION[] = array(
-                "nav_url"=>"index.php",
+                "nav_url"=>"index.php?page=index",
                 "nav_icon"=>"fas fa-home mx-2",
                 "nav_label"=>"Inicio"
             );

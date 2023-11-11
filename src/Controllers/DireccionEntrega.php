@@ -48,13 +48,13 @@ class DireccionEntrega extends PublicController
 
     private function _loadPostData()
     {
-        $this->DireccionDepartamento = isset($_POST["DireccionDepartamento"]) ? $_POST["DireccionDepartamento"] : "";
-        $this->DireccionCiudad = isset($_POST["DireccionCiudad"]) ? $_POST["DireccionCiudad"] : "";
+        /*$this->DireccionDepartamento = isset($_POST["DireccionDepartamento"]) ? $_POST["DireccionDepartamento"] : "";
+        $this->DireccionCiudad = isset($_POST["DireccionCiudad"]) ? $_POST["DireccionCiudad"] : "";*/
         $this->Direccion1 = isset($_POST["Direccion1"]) ? $_POST["Direccion1"] : "";
         $this->Direccion2 = isset($_POST["Direccion2"]) ? $_POST["Direccion2"] : "";
         $this->NumeroTelefonoCelular = isset($_POST["NumeroTelefonoCelular"]) ? $_POST["NumeroTelefonoCelular"] : "";
 
-        if (\Utilities\Validators::IsEmpty($this->DireccionDepartamento))
+        /*if (\Utilities\Validators::IsEmpty($this->DireccionDepartamento))
         {
             $this->aErrors[] = "¡El departamento no puede ir vacío!";
         }
@@ -72,7 +72,7 @@ class DireccionEntrega extends PublicController
         if (!\Utilities\Validators::isLetter($this->DireccionCiudad))
         {
             $this->aErrors[] = "¡La ciudad ingresada no es válida!";
-        }
+        }*/
 
         if (\Utilities\Validators::IsEmpty($this->Direccion1))
         {
@@ -93,8 +93,8 @@ class DireccionEntrega extends PublicController
 
         if(!$this->hasErrors)
         {
-            $direccion = $this->DireccionDepartamento . ", " . $this->DireccionCiudad . ", " . $this->Direccion1 . ", "
-             . $this->Direccion2;
+            /*$direccion = $this->DireccionDepartamento . ", " . $this->DireccionCiudad . ", " . */
+            $direccion = $this->Direccion1 . ", ". $this->Direccion2;
 
             $_SESSION["login"]["DireccionUsuario"] = $direccion;
             $_SESSION["login"]["TelefonoUsuario"] = $this->NumeroTelefonoCelular;

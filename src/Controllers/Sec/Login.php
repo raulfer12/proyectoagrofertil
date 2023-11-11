@@ -61,7 +61,7 @@ class Login extends \Controllers\PublicController
                             );
                         } else {
                             $this->transferirArticulosCarritoAnonimo();
-                            \Utilities\Site::redirectTo("index.php");
+                            \Utilities\Site::redirectTo("index.php?page=index");
                         }
                     }
                 } else {

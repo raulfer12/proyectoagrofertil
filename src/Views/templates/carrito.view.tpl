@@ -55,7 +55,7 @@
     {{if Items}}
     <form method="GET" action="index.php">
         <div class="form-group">
-            <input type="hidden" name="page" value="direccionentrega">
+            <input type="hidden" name="page" value="checkout_checkout">
             <button type="submit" class="btn primary my-4">Recoger orden en establecimiento</button>
         </div>
     </form>
