@@ -65,7 +65,7 @@ class Carrito extends \Controllers\PublicController
         foreach($this->Items as $key => $value)
         {
             $this->Items[$key]["ProductoPrecioVenta"] = number_format($value["ProductoPrecioVenta"], 2);
-            $this->Items[$key]["TotalProduct"] = number_format($value["TotalProduct"], 2);
+           // $this->Items[$key]["TotalProduct"] = number_format($value["TotalProduct"], 2);
 
             $precioSinImpuesto = \Utilities\CalculoPrecios::CalcularPrecioSinImpuesto($value["ProductoPrecioVenta"]);
 

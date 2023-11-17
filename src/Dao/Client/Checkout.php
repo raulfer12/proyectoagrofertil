@@ -37,8 +37,8 @@ class Checkout extends \Dao\Table
         $VentaId = $VentaId["VentaId"];
         $insstr = "INSERT INTO ventasproductos
         VALUES (:ProductoId, :VentaId, :VentasProdCantidad, :VentasProdPrecioVenta);";
-        return self::executeNonQuery($insstr, array("ProductoId"=>intval($ProductoId), 
-        "VentaId"=>intval($VentaId), "VentasProdCantidad"=>intval($VentasProdCantidad), 
+        return self::executeNonQuery($insstr, array("ProductoId"=>intval($ProductoId),
+        "VentaId"=>intval($VentaId), "VentasProdCantidad"=>intval($VentasProdCantidad),
         "VentasProdPrecioVenta"=>floatval($VentasProdPrecioVenta)));
     }
 

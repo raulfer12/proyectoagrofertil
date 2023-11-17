@@ -33,7 +33,7 @@ abstract class Table
         /*
         "boolean"
         "integer"
-        "double" (por razones históricas "double" es devuelto en caso de que un valor sea 
+        "double" (por razones históricas "double" es devuelto en caso de que un valor sea
          de tipo float, y no simplemente "float")
         "string"
         "array"
