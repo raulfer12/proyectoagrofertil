@@ -1,7 +1,7 @@
 <section class="container vh-100 d-flex align-items-center justify-content-center">
   <form class="grid" method="post" action="index.php?page=sec_login{{if redirto}}&redirto={{redirto}}{{endif redirto}}">
     <section class="depth-1 row col-12 col-m-8 offset-m-2 col-xl-6 offset-xl-3">
-      <h1 class="col-12">Iniciar Sesión</h1>
+      <h1 class="col-12 flex center">Iniciar Sesión</h1>
     </section>
     <section class="depth-1 py-5 row col-12 col-m-8 offset-m-2 col-xl-6 offset-xl-3">
       <div class="row">
