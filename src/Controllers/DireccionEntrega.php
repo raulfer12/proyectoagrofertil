@@ -99,8 +99,8 @@ class DireccionEntrega extends PublicController
             $_SESSION["login"]["DireccionUsuario"] = $direccion;
             $_SESSION["login"]["TelefonoUsuario"] = $this->NumeroTelefonoCelular;
 
-            \Utilities\Site::redirectToWithMsg("index.php?page=checkout_checkout",
-            "Información para entrega guardada con éxito");
+            /*\Utilities\Site::redirectToWithMsg("index.php?page=checkout_checkout",
+            "Información para entrega guardada con éxito");*/
         }
     }
 }

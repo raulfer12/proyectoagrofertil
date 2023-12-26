@@ -157,11 +157,11 @@ class VisualizarProducto extends \Controllers\PublicController
         $resultUpdate =  \Dao\Client\CarritoAnonimo::restarProductInventarioAnonimo($this->ProductoId,
         $this->ProdCantidad);
 
-        if($resultInsert && $resultUpdate)
+        /*if($resultInsert && $resultUpdate)
         {
             \Utilities\Site::redirectToWithMsg("index.php?page=VisualizarProducto&ProductoId=".$this->ProductoId,
             "Producto Agregado al Carrito con Éxito");
-        }
+        }*/
     }
 
     private function ingresarProductCarritoUsuario($UsuarioId)
@@ -171,10 +171,10 @@ class VisualizarProducto extends \Controllers\PublicController
         $resultUpdate = \Dao\Client\CarritoUsuario::restarProductInventarioUsuario($this->ProductoId,
         $this->ProdCantidad);
 
-        if($resultInsert && $resultUpdate)
+        /*if($resultInsert && $resultUpdate)
         {
             \Utilities\Site::redirectToWithMsg("index.php?page=VisualizarProducto&ProductoId=".$this->ProductoId,
             "Producto Agregado al Carrito con Éxito");
-        }
+        }*/
     }
 }
