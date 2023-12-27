@@ -56,28 +56,28 @@ class Rol extends \Controllers\PrivateController
                 {
                     case "INS":
                         if (\Dao\Mnt\Roles::insert($this->RolDsc)) {
-                            \Utilities\Site::redirectToWithMsg(
+                            /*\Utilities\Site::redirectToWithMsg(
                                 "index.php?page=admin_roles",
                                 "¡Rol Agregado Satisfactoriamente!"
-                            );
+                            );*/
                         }
                     break;
 
                     case "UPD":
                         if (\Dao\Mnt\Roles::update($this->RolDsc, $this->RolEst, $this->RolId)) {
-                            \Utilities\Site::redirectToWithMsg(
+                           /* \Utilities\Site::redirectToWithMsg(
                                 "index.php?page=admin_roles",
                                 "¡Rol Actualizado Satisfactoriamente!"
-                            );
+                            );*/
                         }
                     break;
 
                     case "DEL":
                         if (\Dao\Mnt\Roles::delete($this->RolId)) {
-                            \Utilities\Site::redirectToWithMsg(
+                            /*\Utilities\Site::redirectToWithMsg(
                                 "index.php?page=admin_roles",
                                 "¡Rol Eliminado Satisfactoriamente!"
-                            );
+                            );*/
                         }
                     break;
                 }

@@ -48,10 +48,10 @@ class Pedido extends \Controllers\PrivateController
                 case "UPD":
                     if (\Dao\Mnt\Pedidos::update($this->VentaId))
                     {
-                        \Utilities\Site::redirectToWithMsg(
+                       /* \Utilities\Site::redirectToWithMsg(
                             "index.php?page=admin_pedidos",
                             "¡Estado del Pedido Actualizado Satisfactoriamente!"
-                        );
+                        );*/
                     }
                 break;
             }

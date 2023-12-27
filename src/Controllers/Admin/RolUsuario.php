@@ -77,10 +77,10 @@ class RolUsuario extends \Controllers\PrivateController
                     case "INS":
                         if (\Dao\Mnt\RolesUsuarios::insert($this->UsuarioId2, $this->RolId2))
                         {
-                            \Utilities\Site::redirectToWithMsg(
+                            /*\Utilities\Site::redirectToWithMsg(
                                 "index.php?page=admin_rolesusuarios",
                                 "¡Rol Agregado a Usuario Satisfactoriamente!"
-                            );
+                            );*/
                         }
                     break;
 
@@ -88,20 +88,20 @@ class RolUsuario extends \Controllers\PrivateController
                         if (\Dao\Mnt\RolesUsuarios::update($this->UsuarioId, $this->RolId,
                         $this->RolUsuarioEst, $this->RolUsuarioExp)) 
                         {
-                            \Utilities\Site::redirectToWithMsg(
+                           /* \Utilities\Site::redirectToWithMsg(
                                 "index.php?page=admin_rolesusuarios",
                                 "¡Rol Actualizado al Usuario Satisfactoriamente!"
-                            );
+                            );*/
                         }
                     break;
 
                     case "DEL":
                         if (\DAO\Mnt\RolesUsuarios::delete($this->UsuarioId, $this->RolId))
                         {
-                            \Utilities\Site::redirectToWithMsg(
+                            /*\Utilities\Site::redirectToWithMsg(
                                 "index.php?page=admin_rolesusuarios",
                                 "¡Rol Eliminado al Usuario Satisfactoriamente!"
-                            );
+                            );*/
                         }
                     break;
                 }

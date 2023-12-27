@@ -94,20 +94,20 @@ class Producto extends \Controllers\PrivateController
                                     if (\Dao\Mnt\Media::insert("sld1.jpg", "public/img/sld1.jpg"))
                                     {
                                         
-                                        \Utilities\Site::redirectToWithMsg(
+                                        /*\Utilities\Site::redirectToWithMsg(
                                             "index.php?page=admin_productos",
                                             "¡Producto Agregado Satisfactoriamente!"
-                                        );
+                                        );*/
                                     }
                                 }
                             }
 
                             if ($inserto)
                             {
-                                \Utilities\Site::redirectToWithMsg(
+                               /* \Utilities\Site::redirectToWithMsg(
                                     "index.php?page=admin_productos",
                                     "¡Producto Agregado Satisfactoriamente!"
-                                );
+                                );*/
                             }
                             
                         }
@@ -160,10 +160,10 @@ class Producto extends \Controllers\PrivateController
                                     {
                                         if (!empty($_mediaDB['MediaDoc']))
                                         {
-                                            \Utilities\Site::redirectToWithMsg(
+                                           /* \Utilities\Site::redirectToWithMsg(
                                                 "index.php?page=admin_productos",
                                                 "¡Producto Actualizado Satisfactoriamente!"
-                                            );
+                                            );*/
                                         }
                                         else
                                         {
@@ -171,10 +171,10 @@ class Producto extends \Controllers\PrivateController
                                             "public/img/sld1.jpg", $this->ProductoId))
                                             {
 
-                                                \Utilities\Site::redirectToWithMsg(
+                                               /* \Utilities\Site::redirectToWithMsg(
                                                     "index.php?page=admin_productos",
                                                     "¡Producto Actualizado Satisfactoriamente!"
-                                                );
+                                                );*/
                                             }
                                         }
                                     }
@@ -183,10 +183,10 @@ class Producto extends \Controllers\PrivateController
 
                             if ($actualizo)
                             {
-                                \Utilities\Site::redirectToWithMsg(
+                                /*\Utilities\Site::redirectToWithMsg(
                                     "index.php?page=admin_productos",
                                     "¡Producto Actualizado Satisfactoriamente!"
-                                );
+                                );*/
                             }
                         }
                     break;
@@ -215,10 +215,10 @@ class Producto extends \Controllers\PrivateController
                             
                             if ($elimino)
                             {
-                                \Utilities\Site::redirectToWithMsg(
+                               /* \Utilities\Site::redirectToWithMsg(
                                     "index.php?page=admin_productos",
                                     "¡Producto Eliminado Satisfactoriamente!"
-                                );
+                                );*/
                             }
                         }
                     break;

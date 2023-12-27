@@ -72,10 +72,10 @@ class Usuario extends \Controllers\PrivateController
                         if (\Dao\Security\Security::newUsuarioAdmin($this->UsuarioEmail,
                         $this->UsuarioNombre, $this->UsuarioPswd, $this->UsuarioTipo))
                         {
-                            \Utilities\Site::redirectToWithMsg(
+                            /*\Utilities\Site::redirectToWithMsg(
                                 "index.php?page=admin_usuarios",
                                 "¡Usuario Agregado Satisfactoriamente!"
-                            );
+                            );*/
                         }
                     break;
 
@@ -85,10 +85,10 @@ class Usuario extends \Controllers\PrivateController
                             if (\Dao\Security\Security::updateUsuarioAdmin($this->UsuarioId,
                             $this->UsuarioEmail, $this->UsuarioNombre, $this->UsuarioEst, $this->UsuarioTipo))
                             {
-                                \Utilities\Site::redirectToWithMsg(
+                               /* \Utilities\Site::redirectToWithMsg(
                                     "index.php?page=admin_usuarios",
                                     "¡Usuario Actualizado Satisfactoriamente!"
-                                );
+                                );*/
                             }
                         }
                         else
@@ -97,10 +97,10 @@ class Usuario extends \Controllers\PrivateController
                             $this->UsuarioEmail, $this->UsuarioNombre, $this->UsuarioPswd,
                             $this->UsuarioEst, $this->UsuarioTipo))
                             {
-                                \Utilities\Site::redirectToWithMsg(
+                               /* \Utilities\Site::redirectToWithMsg(
                                     "index.php?page=admin_usuarios",
                                     "¡Usuario Actualizado Satisfactoriamente!"
-                                );
+                                );*/
                             }
                         }
                         
@@ -108,10 +108,10 @@ class Usuario extends \Controllers\PrivateController
 
                     case "DEL":
                         if (\DAO\Security\Security::deleteUsuarioAdmin($this->UsuarioId)) {
-                            \Utilities\Site::redirectToWithMsg(
+                            /*\Utilities\Site::redirectToWithMsg(
                                 "index.php?page=admin_usuarios",
                                 "¡Usuario Eliminado Satisfactoriamente!"
-                            );
+                            );*/
                         }
                     break;
                 }

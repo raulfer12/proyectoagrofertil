@@ -72,10 +72,10 @@ class FuncionRol extends \Controllers\PrivateController
                     case "INS":
                         if (\Dao\Mnt\FuncionesRoles::insert($this->RolId2, $this->FuncionId2))
                         {
-                            \Utilities\Site::redirectToWithMsg(
+                           /* \Utilities\Site::redirectToWithMsg(
                                 "index.php?page=admin_funcionesroles",
                                 "¡Funcion por Rol Agregada Satisfactoriamente!"
-                            );
+                            );*/
                         }
                     break;
 
@@ -83,20 +83,20 @@ class FuncionRol extends \Controllers\PrivateController
                         if (\Dao\Mnt\FuncionesRoles::update($this->RolId, $this->FuncionId, $this->FuncionRolEst,
                          $this->FuncionExp))
                         {
-                            \Utilities\Site::redirectToWithMsg(
+                           /* \Utilities\Site::redirectToWithMsg(
                                 "index.php?page=admin_funcionesroles",
                                 "¡Funcion por Rol Actualizada Satisfactoriamente!"
-                            );
+                            );*/
                         }
                     break;
 
                     case "DEL":
                         if (\DAO\Mnt\FuncionesRoles::delete($this->RolId, $this->FuncionId))
                         {
-                            \Utilities\Site::redirectToWithMsg(
+                           /* \Utilities\Site::redirectToWithMsg(
                                 "index.php?page=admin_funcionesroles",
                                 "¡Funcion por Rol Eliminada Satisfactoriamente!"
-                            );
+                            );*/
                         }
                     break;
                 }
