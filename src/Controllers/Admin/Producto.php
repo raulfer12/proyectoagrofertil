@@ -93,7 +93,6 @@ class Producto extends \Controllers\PrivateController
                                 {
                                     if (\Dao\Mnt\Media::insert("sld1.jpg", "public/img/sld1.jpg"))
                                     {
-                                        
                                         /*\Utilities\Site::redirectToWithMsg(
                                             "index.php?page=admin_productos",
                                             "¡Producto Agregado Satisfactoriamente!"
@@ -152,7 +151,6 @@ class Producto extends \Controllers\PrivateController
                                         }
 
                                     }
-
                                 }
                                 else
                                 {
@@ -180,7 +178,6 @@ class Producto extends \Controllers\PrivateController
                                     }
                                 }
                             }
-
                             if ($actualizo)
                             {
                                 /*\Utilities\Site::redirectToWithMsg(
@@ -190,7 +187,6 @@ class Producto extends \Controllers\PrivateController
                             }
                         }
                     break;
-
                     case "DEL":
 
                         $elimino = false;

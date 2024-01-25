@@ -78,6 +78,7 @@
     
             <div class="row center flex-end px-3 py-3">
                 {{if showaction}}
+                    <form action="index.php?page=admin_productos" method="post">
                     <button type="submit" class="btn btn-block primary" id="btnGuardar" name="btnGuardar">Guardar</button>
                 {{endif showaction}}
                 <button type="button" class="btn btn-block btn-danger" id="btnCancelar" name="btnCancelar">Cancelar</button>

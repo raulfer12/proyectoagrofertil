@@ -34,7 +34,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #0a7506" id="menu">
       <div class="container">
         <a href="index.php?page=index" class="navbar-brand center">
-          <img class="mr-3" src="public\imgs\logo_agrofertil.png" style="height:75px; border-radius: 20%;">{{SITE_TITLE}}
+          <img class="mr-3" src="public\imgs\logo_agrofertil_2.jpg" style="height:75px; border-radius: 20%;">{{SITE_TITLE}}
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
