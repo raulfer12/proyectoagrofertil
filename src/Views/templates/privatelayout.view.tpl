@@ -16,6 +16,8 @@
   <!--Bootstrap y CSS-->
   <link rel="stylesheet" href="/{{BASE_DIR}}/public/css/style.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="public/css/icons.css">
 
   <!--scripts Bootstrap-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -90,8 +92,15 @@
     {{{page_content}}}
   </main>
   <footer class="py-4">
+    <section class="buttons">
+      <a href="https://wa.me/31663812" class="fa fa-whatsapp"></a>
+      <a href="https://www.instagram.com/agrofertilhn/?hl=es" class="fa fa-instagram"></a>
+      <a href="https://www.facebook.com/profile.php?id=61555851848713" class="fa fa-facebook"></a>
+      <a href="https://www.youtube.com/@Agrofertilhn" class="fa fa-youtube"></a>
+      <a href="mailto:agrofertilhn@gmail.com?subject=Consulta de Cliente&body=*Redactar Mensaje Porfavor*" class="fa fa-google"></a>
+    </section>
     <div class="container">
-      <p class="m-0 text-center text-white">© 2023, Agrofertil S. de R.L. Todos los Derechos Reservados</p>
+      <p class="m-0 text-center text-white">© 2024, Agrofertil S. de R.L. Todos los Derechos Reservados</p>
     </div>
   </footer>
   {{foreach EndScripts}}
