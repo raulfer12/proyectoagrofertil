@@ -5,6 +5,8 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
@@ -15,6 +17,12 @@
         </div>
         <div class="carousel-item">
             <img class="d-block img-fluid" src="public\imgs\slider05.jpg" alt="Third slide">
+        </div>
+         <div class="carousel-item">
+            <img class="d-block img-fluid" src="public\imgs\slider07.png" alt="Third slide">
+        </div>
+         <div class="carousel-item">
+            <img class="d-block img-fluid" src="public\imgs\slider08.png" alt="Third slide">
         </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
