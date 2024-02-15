@@ -1,6 +1,6 @@
 <section class="container d-flex align-items-center justify-content-center min-vh-100">
     <div class="card my-5 w-100">
-      <div class="card-header text-light" style="background-color: #0a7506">
+      <div class="card-header text-light" style="background-color: #40c224">
         <h3 class="text-center">{{mode_dsc}}</h3>
       </div>
       <div class="card-body"> 
@@ -45,7 +45,7 @@
           <br><br>
           <div class="table-responsive table-hover rounded">
             <table class="table">
-              <thead class="thead text-light" style="background-color: #0a7506">
+              <thead class="thead text-light" style="background-color: #40c224">
                   <tr>
                   <th class="text-center align-middle">Código del Producto</th>
                   <th class="text-center align-middle">Nombre del Producto</th>

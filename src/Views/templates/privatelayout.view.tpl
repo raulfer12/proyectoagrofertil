@@ -33,7 +33,7 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #0a7506" id="menu">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #40c224" id="menu">
       <div class="container">
         <a href="index.php?page=index" class="navbar-brand center">
           <img class="mr-3" src="public\imgs\logo_agrofertil_2.jpg" style="height:75px; border-radius: 20%;">{{SITE_TITLE}}

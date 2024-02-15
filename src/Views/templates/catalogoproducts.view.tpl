@@ -1,6 +1,6 @@
 <section class="container-fluid" id="products">
     <br><br><br>
-    <h4 class="my-4   justify-content text-center p-3 mb-2 text-light " style="background-color: #0a7506; ">{{PageTitle}}</h4>
+    <h4 class="my-4   justify-content text-center p-3 mb-2 text-light " style="background-color: #40c224; ">{{PageTitle}}</h4>
     
     <form class="form-inline align-items-center d-flex justify-content-center mb-4" action="index.php" method="GET">
         <input type="hidden" name="page" value="catalogoproducts"/>

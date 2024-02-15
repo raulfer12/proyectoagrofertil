@@ -17,7 +17,7 @@
 
   <div class="table-responsive table-hover rounded">
     <table class="table">
-      <thead class="thead text-light" style="background-color: #0a7506">
+      <thead class="thead text-light" style="background-color: #40c224">
         <tr>
           <th class="text-center align-middle">Código</th>
           <th class="text-center align-middle">Descripción</th>

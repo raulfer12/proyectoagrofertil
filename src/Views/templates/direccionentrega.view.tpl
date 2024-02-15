@@ -8,7 +8,7 @@
     </div>
 
     <div class="card mt-5 mb-1 w-100">
-        <div class="card-header" style="background-color: #0a7506">
+        <div class="card-header" style="background-color: #40c224">
             <h3 class="text-center text-light">Datos para la Entrega del Producto</h3>
         </div>
         <div class="card-body"> 

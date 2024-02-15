@@ -1,7 +1,7 @@
 <section class="container min-vh-100">
     <h3 class="my-4 text-center display-4 mb-2">Detalle de la Orden</h3>
     <table class="table table-bordered table-hover">
-        <thead class="thead text-light" style="background-color: #0a7506">
+        <thead class="thead text-light" style="background-color: #40c224">
             <tr>
                 <th class="text-center align-middle">Descripción</th>
                 <th class="text-center align-middle">Cantidad</th>
