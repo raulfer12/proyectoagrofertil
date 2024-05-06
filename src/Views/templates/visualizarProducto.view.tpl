@@ -22,21 +22,21 @@
                 </div>
             {{endfor AllProducMedia}}
         </div>
-        <div class="col-lg-10">
+       <!-- <div class="col-lg-10">
             <div class="row">
                 <div class="col-md-6"> 
                     <img src="{{PrimaryMediaPath}}" alt="{{PrimaryMediaDoc}}" width="90%"> 
-                </div>
+                </div>-->
 
                 <div class="col-md-6">
-                    <h3 class="mb-4">Lps.{{ProductoPrecioVenta}}</h3>
+                    <!--<h3 class="mb-4">Lps.{{ProductoPrecioVenta}}</h3>-->
                     <h4 class="mb-4">Descripción</h4>
                     <p class="lead">
                         {{ProductoDescripcion}}
                     </p>
                     
                     <form method="POST" action="index.php?page=VisualizarProducto&ProductoId={{ProductoId}}">
-                        <input type="hidden" name="ProductoPrecioVenta" value={{ProductoPrecioVenta}}>
+                        <!--<input type="hidden" name="ProductoPrecioVenta" value={{ProductoPrecioVenta}}>-->
                         <input type="hidden" name="ProductoStock" value={{ProductoStock}}>
                         <label class="font-weight-bold" for="ProdCantidad">Cantidad</label>
                         <br/>

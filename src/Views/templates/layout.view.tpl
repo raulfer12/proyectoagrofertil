@@ -56,11 +56,11 @@
                 <i class="fas fa-sign-in-alt"></i>&nbsp;Iniciar Sesión
               </a>
             </li>
-            <li class="nav-item">
+           <!-- <li class="nav-item">
               <a class="nav-link text-white" href="index.php?page=sec_register">
                 <i class="fas fa-user-plus"></i>&nbsp;Crear Cuenta
               </a>
-            </li>
+            </li>-->
             <li class="nav-item">
               <a class="nav-link text-white" href="index.php?page=carrito">
                 <i class="fas fa-shopping-cart mx-2"></i>&nbsp;Carrito
