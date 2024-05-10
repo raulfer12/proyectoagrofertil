@@ -62,7 +62,7 @@
         {
             if (!\Utilities\Validators::IsValidEmail($UsuarioEmail)) 
             {
-                throw new Exception("Elcorreo no es válido");
+                throw new Exception("El correo no es válido");
             }
             
             if (!\Utilities\Validators::IsValidPassword($UsuarioPswd)) 

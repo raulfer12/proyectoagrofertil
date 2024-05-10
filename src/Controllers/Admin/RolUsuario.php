@@ -86,7 +86,7 @@ class RolUsuario extends \Controllers\PrivateController
 
                     case "UPD":
                         if (\Dao\Mnt\RolesUsuarios::update($this->UsuarioId, $this->RolId,
-                        $this->RolUsuarioEst, $this->RolUsuarioExp)) 
+                        $this->RolUsuarioEst, $this->RolUsuarioExp))
                         {
                            /* \Utilities\Site::redirectToWithMsg(
                                 "index.php?page=admin_rolesusuarios",

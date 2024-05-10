@@ -10,6 +10,19 @@ class Carrito extends \Controllers\PublicController
 
     public function run() :void
     {
+        $UsuarioId = \Utilities\Security::getUserId();
+    
+            if($this->isPostBack())
+            {
+                $this->_loadPostData();
+            }
+    
+            if(empty($UsuarioId))
+            {
+                \Utilities\Site::redirectToWithMsg("index.php?page=sec_login",
+                "Es necesario iniciar sesión para continuar");
+            }
+            
         if(!$this->isPostBack())
         {
             if(!\Utilities\Security::isLogged())
