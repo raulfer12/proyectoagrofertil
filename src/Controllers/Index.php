@@ -55,7 +55,13 @@ class Index extends PublicController
             \Utilities\Nav::setNavContext();
         }
 
-        \Views\Renderer::render("index", $dataview, $layout);
+        if(\Utilities\Security::isLogged())
+        {
+            \Views\Renderer::render("index", $dataview, $layout);;
+        }else{
+            \Views\Renderer::render("indexAnonimo", $dataview, $layout);
+        }
+
     }
 }
 ?>

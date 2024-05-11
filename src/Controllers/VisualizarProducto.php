@@ -37,8 +37,13 @@ class VisualizarProducto extends \Controllers\PublicController
 
         $this->_load();
         $dataview = get_object_vars($this);
-
-        \Views\Renderer::render("VisualizarProducto", $dataview, $layout);
+        
+        if(\Utilities\Security::isLogged())
+        {
+            \Views\Renderer::render("VisualizarProducto", $dataview, $layout);
+        }else{
+            \Views\Renderer::render("VisualizarProductoAnonimo", $dataview, $layout);
+        }
     }
 
     private function _load()
@@ -46,7 +51,7 @@ class VisualizarProducto extends \Controllers\PublicController
         $_data = \Dao\Client\Productos::getOne($this->ProductoId);
         $_producMedia = \Dao\Client\Productos::getAllProducMedia($this->ProductoId);
 
-        if ($_data) 
+        if ($_data)
         {
             $this->ProductoId = $_data["ProductoId"];
             $this->ProductoNombre = $_data["ProductoNombre"];

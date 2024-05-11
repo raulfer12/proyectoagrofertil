@@ -40,7 +40,12 @@ class CatalogoProducts extends \Controllers\PublicController
             \Utilities\Nav::setNavContext();
         }
 
-        \Views\Renderer::render("catalogoproducts", $dataview, $layout);
+        if(\Utilities\Security::isLogged())
+        {
+            \Views\Renderer::render("catalogoproducts", $dataview, $layout);
+        }else{
+            \Views\Renderer::render("catalogoproductsAnonimo", $dataview, $layout);
+        }
     }
 
     private function _load($busqueda="")

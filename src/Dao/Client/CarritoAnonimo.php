@@ -51,21 +51,21 @@ class CarritoAnonimo extends \Dao\Table
 
     public static function getProductsCarritoAnonimo($ClienteAnonimoId)
     {
-        $sqlstr = "SELECT ca.*, p.ProductoNombre, (ca.ProdCantidad * ca.ProductoPrecioVenta)
-        as 'TotalProducto', m.MediaDoc, m.MediaPath FROM carritocompraclienteanonimo ca
+        $sqlstr = "SELECT ca.*, p.ProductoNombre,
+        m.MediaDoc, m.MediaPath FROM carritocompraclienteanonimo ca
         INNER JOIN productos p on ca.ProductoId = p.ProductoId
         INNER JOIN media m on m.ProductoId = p.ProductoId
         WHERE ClienteAnonimoId = :ClienteAnonimoId
-        GROUP BY ca.ProductoId;"; 
+        GROUP BY ca.ProductoId;";
         return self::obtenerRegistros($sqlstr, array("ClienteAnonimoId"=>strval($ClienteAnonimoId)));
     }
 
-    public static function getTotalCarrito($ClienteAnonimoId)
+    /*public static function getTotalCarrito($ClienteAnonimoId)
     {
         $sqlstr = "SELECT SUM(ca.ProdCantidad * ca.ProductoPrecioVenta) as 'Total' FROM carritocompraclienteanonimo ca
         INNER JOIN productos p on ca.ProductoId = p.ProductoId
         WHERE ClienteAnonimoId = :ClienteAnonimoId";
         return self::obtenerUnRegistro($sqlstr, array("ClienteAnonimoId"=>$ClienteAnonimoId));
-    }
+    }*/
 }
 ?>

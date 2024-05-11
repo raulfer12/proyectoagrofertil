@@ -19,7 +19,7 @@
                     <h4 class="card-title text-center mb-4">
                         <a href="index.php?page=visualizarproducto&ProductoId={{ProductoId}}">{{ProductoNombre}}</a>
                     </h4>
-                    <h5 class="mb-4">Lps. {{ProductoPrecioVenta}}</h5>
+                    <!--<h5 class="mb-4">Lps. {{ProductoPrecioVenta}}</h5>-->
                     <p class="card-text">{{ProductoDescripcion}}</p>
                 </div>
             </div>
