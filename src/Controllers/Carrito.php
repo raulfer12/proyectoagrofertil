@@ -10,7 +10,7 @@ class Carrito extends \Controllers\PublicController
 
     public function run() :void
     {
-        $UsuarioId = \Utilities\Security::getUserId();
+        /*$UsuarioId = \Utilities\Security::getUserId();
     
             if($this->isPostBack())
             {
@@ -21,7 +21,7 @@ class Carrito extends \Controllers\PublicController
             {
                 \Utilities\Site::redirectToWithMsg("index.php?page=sec_login",
                 "Es necesario iniciar sesión para continuar");
-            }
+            }*/
             
         if(!$this->isPostBack())
         {
