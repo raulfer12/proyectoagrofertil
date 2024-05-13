@@ -57,7 +57,7 @@ class Index extends PublicController
 
         if(\Utilities\Security::isLogged())
         {
-            \Views\Renderer::render("index", $dataview, $layout);;
+            \Views\Renderer::render("index", $dataview, $layout);
         }else{
             \Views\Renderer::render("indexAnonimo", $dataview, $layout);
         }

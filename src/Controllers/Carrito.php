@@ -66,8 +66,14 @@ class Carrito extends \Controllers\PublicController
             \Utilities\Nav::setNavContext();
         }
 
-        $allViewData= get_object_vars($this);
-        \Views\Renderer::render("carrito", $allViewData, $layout);
+        if(\Utilities\Security::isLogged())
+        {
+            $allViewData= get_object_vars($this);
+            \Views\Renderer::render("carrito", $allViewData, $layout);
+        }else{
+            $allViewData= get_object_vars($this);
+            \Views\Renderer::render("carritoAnonimo", $allViewData, $layout);
+        }
     }
 
     private function mostarProductsCarritoAnonimo()
@@ -78,7 +84,7 @@ class Carrito extends \Controllers\PublicController
         foreach($this->Items as $key => $value)
         {
             $this->Items[$key]["ProductoPrecioVenta"] = number_format($value["ProductoPrecioVenta"], 2);
-           // $this->Items[$key]["TotalProduct"] = number_format($value["TotalProduct"], 2);
+            //$this->Items[$key]["TotalProduct"] = number_format($value["TotalProduct"], 2);
 
             $precioSinImpuesto = \Utilities\CalculoPrecios::CalcularPrecioSinImpuesto($value["ProductoPrecioVenta"]);
 
