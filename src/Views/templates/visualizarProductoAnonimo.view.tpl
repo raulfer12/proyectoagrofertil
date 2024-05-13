@@ -36,7 +36,7 @@
                     </p>
                     
                     <form method="POST" action="index.php?page=VisualizarProducto&ProductoId={{ProductoId}}">
-                        <!--<input type="hidden" name="ProductoPrecioVenta" value={{ProductoPrecioVenta}}>-->
+                        <input type="hidden" name="ProductoPrecioVenta" value={{ProductoPrecioVenta}}>
                         <input type="hidden" name="ProductoStock" value={{ProductoStock}}>
                         <label class="font-weight-bold" for="ProdCantidad">Cantidad</label>
                         <br/>
