@@ -1,19 +1,3 @@
-<script>
-        function correo() {
-            mailto:agrofertilhn@gmail.com?subject=Pedido de Cliente&body=*Redactar Mensaje Porfavor*;
-        }
-
-        function regresar_inicio() {
-            index.php?page=index;
-        }
-
-        function ejecutar_funciones() {
-            correo();
-            regresar_inicio();
-            // Agrega aquí más funciones si es necesario
-        }
-    </script>
-
 <section class="container min-vh-100">
 
 <!--<br><br><br>
@@ -35,11 +19,23 @@
             <h3 class="text-center text-light">Confirmación de Pedido</h3>
         </div>
        <div class="card-body"> 
-             
-                <form>
-                    <button type="submit" class="btn primary mt-2 ml-3" id="btnAceptar" class="fa fa-google" onclick="ejecutar_funciones" name="btnAceptar">Realizar Pedido</button>
-                </form>
-            </form>
+                <!--<form method="GET" action="index.php">-->
+                <!--<form>-->
+                    <!--<div class="form-group">-->
+                       <!-- <input type="hidden" name="page" value="index.php?page=index">-->
+                       <!--<a href="mailto:agrofertilhn@gmail.com?subject=Pedido de Cliente&body=*Redactar Mensaje Porfavor*">
+                       </a>
+                        <button type="submit" class="btn primary mt-2 ml-3"  id="btnAceptar" class="fa fa-google"  name="btnAceptar">Realizar Pedido</button>
+                    </div>-->
+               <!-- </form>-->
+           <!-- </form>-->
+           <h3><a href="mailto:agrofertilhn@gmail.com?subject=Pedido de Cliente&body=Producto: {{ProductoNombre}}" >Realizar Pedido</a></h3>
+           <form method="GET" action="index.php">
+            <div class="form-group">
+              <input type="hidden" name="page" value="index">
+              <button type="submit" class="btn primary my-4">Vover a Inicio</button>
+            </div>
+           </form>
         </div>
     </div>
 

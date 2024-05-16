@@ -55,8 +55,13 @@
                     </ul>
                 </section>
                 {{endif hasErrors}}
-
-                <button type="submit" class="btn primary mt-2 ml-3" id="btnAceptar" name="btnAceptar">Realizar Pedido</button>
+                <h3><a href="mailto:agrofertilhn@gmail.com?subject=Pedido de Cliente&body=*Redactar Mensaje Porfavor*" >Realizar Pedido</a></h3>
+                <form method="GET" action="index.php">
+                    <div class="form-group">
+                        <input type="hidden" name="page" value="index">
+                        <button type="submit" class="btn primary my-4">Vover a Inicio</button>
+                    </div>
+                </form>
             </form>
         </div>
     </div>
