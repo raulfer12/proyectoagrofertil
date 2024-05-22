@@ -17,10 +17,10 @@
             <input class="width-full center" type="text" class="form-control" readonly id="VentaFecha" name="VentaFecha" value="{{VentaFecha}}" maxlength="80">
           </div>
 
-          <div class="row">
+          <!--<div class="row">
             <label class="col-12 col-m-4 flex center" for="VentaISV">Impuesto sobre la Venta</label>
             <input class="width-full center" type="text" class="form-control" readonly id="VentaISV" name="VentaISV" value="{{VentaISV}}" maxlength="80">
-          </div>
+          </div>-->
 
           <div class="row">
             <label class="col-12 col-m-4 flex center" for="VentaEst">Estado de la Venta</label>

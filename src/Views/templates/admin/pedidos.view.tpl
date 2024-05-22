@@ -21,7 +21,7 @@
             <tr>
             <th class="text-center align-middle">Código</th>
             <th class="text-center align-middle">Fecha</th>
-            <th class="text-center align-middle">ISV</th>
+            <!--<th class="text-center align-middle">ISV</th>-->
             <th class="text-center align-middle">Estado</th>
             <th class="text-center align-middle">Nombre del Cliente</th>
             <th class="text-center align-middle">Dirección del Cliente</th>
@@ -35,7 +35,7 @@
             <tr>
                 <td class="text-center align-middle"><a href="index.php?page=admin_pedido&mode=DSP&VentaId={{VentaId}}">{{VentaId}}</a></td>
                 <td class="text-center align-middle">{{VentaFecha}}</td>
-                <td class="text-center align-middle">{{VentaISV}}</td>
+                <!--<td class="text-center align-middle">{{VentaISV}}</td>-->
                 <td class="text-center align-middle">{{VentaEst}}</td>
                 <td class="text-center align-middle">{{UsuarioNombre}}</td>
                 <td class="text-center align-middle">{{ClienteDireccion}}</td>

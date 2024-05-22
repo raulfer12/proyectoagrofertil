@@ -52,6 +52,8 @@
         </div>
     </form>
 
+    <h3><a href="mailto:agrofertilhn@gmail.com?subject=Pedido de Cliente&body=Pedido Recibido" >Realizar Pedido</a></h3>
+
     {{if Items}}
     <form method="GET" action="index.php">
         <div class="form-group">
@@ -59,6 +61,7 @@
             <button type="submit" class="btn primary my-4">Recoger orden en establecimiento</button>
         </div>
     </form>
+   
     {{endif Items}}
     {{if Items}}
     <form method="GET" action="index.php">
