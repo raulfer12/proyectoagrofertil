@@ -63,6 +63,17 @@
     </form>
    
     {{endif Items}}
+
+    {{if Items}}
+    <form method="Post">
+        <div class="form-group">
+            <input type="hidden" name="page" value="index">
+            <button type="submit" class="btn primary my-4">Realizar Pedido</button>
+        </div>
+    </form>
+   
+    {{endif Items}}
+
     {{if Items}}
     <form method="GET" action="index.php">
         <div class="form-group">

@@ -176,7 +176,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-\Views\Renderer::render("paypal/correo", $viewData);
+\Views\Renderer::render("paypal/carrito", $viewData);
 
 require 'vendor/autoload.php';
 

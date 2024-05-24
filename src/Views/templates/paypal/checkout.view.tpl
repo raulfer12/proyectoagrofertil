@@ -42,37 +42,40 @@
             </div>
            </form>
 
-           <button type="submit" id="EnviarCorreo"class="btn primary my-4">Otra Opcion Para Enviar Correo</button>
+           <form action="EnviarCorreo.php" method="POST">
 
-            <script>
-                 document.getElementById("EnviarCorreo").addEventListener("click", function() {
-                // Datos para enviar el correo
-                const correo = "agrofertilhn@gmail.com";
-                const nombre = "Agrofertil";
-                const asunto = "Pedido de Cliente";
-                const mensaje = "Producto:{{NombreProducto}}";
+                <button type="submit" id="EnviarCorreo"class="btn primary my-4">Otra Opcion Para Enviar Correo</button>
 
-                // Crear un objeto FormData para enviar los datos
-                const formData = new FormData();
-                formData.append("correo", correo);
-                formData.append("nombre", nombre);
-                formData.append("asunto", asunto);
-                formData.append("mensaje", mensaje);
+                <script>
+                     document.getElementById("EnviarCorreo").addEventListener("click", function() {
+                    // Datos para enviar el correo
+                    const correo = "agrofertilhn@gmail.com";
+                    const nombre = "Agrofertil";
+                    const asunto = "Pedido de Cliente";
+                    const mensaje = "Producto:{{NombreProducto}}";
 
-                // Enviar la solicitud AJAX
-                fetch("EnviarCorreo.php", {
-                    method: "POST",
-                    body: formData
-                })
-                .then(response => response.text())
-                .then(result => {
-                    alert(result); // Mostrar el resultado del envío del correo
-                })
-                .catch(error => {
-                    console.error("Error:", error);
+                    // Crear un objeto FormData para enviar los datos
+                    const formData = new FormData();
+                    formData.append("correo", correo);
+                    formData.append("nombre", nombre);
+                    formData.append("asunto", asunto);
+                    formData.append("mensaje", mensaje);
+
+                    // Enviar la solicitud AJAX
+                    fetch("EnviarCorreo.php", {
+                        method: "POST",
+                        body: formData
+                    })
+                    .then(response => response.text())
+                    .then(result => {
+                        alert(result); // Mostrar el resultado del envío del correo
+                    })
+                    .catch(error => {
+                        console.error("Error:", error);
+                    });
                 });
-            });
-        </script>
+                </script>
+            </form>
 
            <form method="GET" action="index.php">
             <div class="form-group">

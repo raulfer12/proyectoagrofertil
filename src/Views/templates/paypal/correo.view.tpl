@@ -39,7 +39,13 @@
     </script>
 </body>
 </html>-->
-<!DOCTYPE html>
+
+
+
+
+
+
+<!--<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -64,4 +70,4 @@
         <button type="submit">Enviar Correo</button>
     </form>
 </body>
-</html>
+</html>-->
