@@ -60,7 +60,7 @@ class Nav {
                 "nav_label"=>" Catálogo de productos"
             );
         }
-        if (\Utilities\Security::isAuthorized($userID, "Controllers\Admin\Pedidos"))
+        /*if (\Utilities\Security::isAuthorized($userID, "Controllers\Admin\Pedidos"))
         {
             $adminNAVIGATION[] = array(
                 "nav_url"=>"index.php?page=admin_pedidos",
@@ -75,7 +75,7 @@ class Nav {
                 "nav_icon"=>"fas fa-check-square",
                 "nav_label"=>" Historial de Ventas"
             );
-        }
+        }*/
         
         //TODA LA NAVEGACIÓN PARA LOS CLIENTES
         if($usuario["UsuarioTipo"] === "PBL")
@@ -92,11 +92,11 @@ class Nav {
                 "nav_label"=>"Productos"
             );
             
-            $clientNAVIGATION[] = array(
+           /* $clientNAVIGATION[] = array(
                 "nav_url"=>"index.php?page=carrito",
                 "nav_icon"=>"fas fa-shopping-cart mx-2",
                 "nav_label"=>"Carrito"
-            );
+            );*/
         }
         \Utilities\Context::setContext("ADMINNAVIGATION", $adminNAVIGATION);
         \Utilities\Context::setContext("CLIENTNAVIGATION", $clientNAVIGATION);

@@ -35,14 +35,14 @@
                         {{ProductoDescripcion}}
                     </p>
                     
-                    <form method="POST" action="index.php?page=VisualizarProducto&ProductoId={{ProductoId}}">
+                    <!--<form method="POST" action="index.php?page=VisualizarProducto&ProductoId={{ProductoId}}">
                         <input type="hidden" name="ProductoPrecioVenta" value={{ProductoPrecioVenta}}>
                         <input type="hidden" name="ProductoStock" value={{ProductoStock}}>
                         <label class="font-weight-bold" for="ProdCantidad">Cantidad</label>
                         <br/>
                         <input class="form-control col-md-2" type="number" id="ProdCantidad" name="ProdCantidad" min="1" value="{{ProdCantidad}}">
                         <button class="btn btn-lg primary mt-4" type="submit" id="btnAgregarCarrito"><i class="fas fa-shopping-cart mx-2"></i>Agregar al carrito</button>
-                    </form>
+                    </form>-->
 
                     {{if Error}}
                         <p class="text-danger font-weight-bold my-4">{{Error}}</p>
