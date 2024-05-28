@@ -6,12 +6,6 @@
     {
         public function __construct()
         {
-            /*
-            $userInRole = \Utilities\Security::isInRol(
-                \Utilities\Security::getUserId(),
-                "ADMINISTRADOR"
-            );ejemplo
-            */
             parent::__construct();
         }
         

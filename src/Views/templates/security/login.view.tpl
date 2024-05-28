@@ -27,9 +27,11 @@
         {{generalError}}
       </div>
     {{endif generalError}}
-    <div class="row center flex-end px-3 py-3">
-      <button class="btn btn-block primary" id="btnLogin" type="submit">Iniciar Sesión</button>
-    </div>
+    <form method="GET" action="index.php">
+      <div class="row center flex-end px-3 py-3">
+        <button class="btn btn-block primary" action="index.php" id="btnLogin" type="submit">Iniciar Sesión</button>
+      </div>
+    </form>
     </section>
   </form>
 </section>

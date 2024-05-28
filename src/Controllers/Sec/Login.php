@@ -60,7 +60,7 @@ class Login extends \Controllers\PublicController
                                 \Utilities\Context::getContextByKey("redirto")
                             );
                         } else {
-                            $this->transferirArticulosCarritoAnonimo();
+                           // $this->transferirArticulosCarritoAnonimo();
                             \Utilities\Site::redirectTo("index.php?page=index");
                         }
                     }
@@ -79,7 +79,7 @@ class Login extends \Controllers\PublicController
         \Views\Renderer::render("security/login", $dataView);
     }
 
-    private function transferirArticulosCarritoAnonimo() : void
+   /* private function transferirArticulosCarritoAnonimo() : void
     {
         $userId = \Utilities\Security::getUserId();
 
@@ -110,6 +110,6 @@ class Login extends \Controllers\PublicController
             \Utilities\Site::redirectTo("index.php?page=carrito");
         }
 
-    }
+    }*/
 }
 ?>
