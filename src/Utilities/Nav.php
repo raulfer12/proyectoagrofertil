@@ -12,14 +12,14 @@ class Nav {
         $usuario = \Dao\Security\Security::getUsuariobyId($userID);
 
         //Navegación para administradores
-        if (\Utilities\Security::isAuthorized($userID, "Controllers\Admin\Admin"))
+        /*if (\Utilities\Security::isAuthorized($userID, "Controllers\Admin\Admin"))
         {
             $adminNAVIGATION[] = array(
                 "nav_url"=>"index.php?page=admin_admin",
                 "nav_icon"=>"fas fa-home",
                 "nav_label"=>" Inicio"
             );
-        }
+        }*/
         if (\Utilities\Security::isAuthorized($userID, "Controllers\Admin\Usuarios"))
         {
             $adminNAVIGATION[] = array(
