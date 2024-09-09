@@ -28,7 +28,7 @@ class Login extends \Controllers\PublicController
                     if ($dbUser["UsuarioEst"] != \Dao\Security\Estados::ACTIVO) {
                         $this->generalError = "¡El usuario tiene un estado inactivo!";
                         $this->hasError = true;
-                       /* error_log(
+                        /*error_log(
                             sprintf(
                                 "ERROR: %d %s tiene cuenta con estado %s",
                                 $dbUser["usercod"],
