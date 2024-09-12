@@ -33,7 +33,7 @@
                 {{foreach items}}
                 <tr>
                     <td class="text-center align-middle">{{ProductoId}}</td>
-                    <td class="text-center align-middle"><a href="index.php?page=admin_producto&mode=DSP&ProductoId={{ProductoId}}">{{ProductoNombre}}</a></td>
+                    <td class="text-center align-middle"><a href="index.php?page=admin_producto&mode=DSP&ProductoId={{ProductoId}}" style="color: #40c224">{{ProductoNombre}}</a></td>
                     <td class="text-center align-middle">{{ProductoDescripcion}}</td>
                     <td class="text-center align-middle">{{ProductoPrecioVenta}}</td>
                     <td class="text-center align-middle">{{ProductoPrecioCompra}}</td>

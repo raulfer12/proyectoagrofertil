@@ -36,7 +36,7 @@
               <td class="text-center align-middle">{{UsuarioId}}</td>
               <td class="text-center align-middle">{{RolId}}</td>
               <td class="text-center align-middle">{{RolUsuarioEst}}</td>
-              <td class="text-center align-middle"><a href="index.php?page=admin_rolusuario&mode=DSP&UsuarioId={{UsuarioId}}&RolId={{RolId}}">{{UsuarioNombre}}</a></td>
+              <td class="text-center align-middle"><a href="index.php?page=admin_rolusuario&mode=DSP&UsuarioId={{UsuarioId}}&RolId={{RolId}}" style="color: #40c224">{{UsuarioNombre}}</a></td>
               <td class="text-center align-middle">{{UsuarioEmail}}</td>
               <td class="text-center align-middle">{{UsuarioTipo}}</td>
               <td class="text-center align-middle">{{RolUsuarioFch}}</td>

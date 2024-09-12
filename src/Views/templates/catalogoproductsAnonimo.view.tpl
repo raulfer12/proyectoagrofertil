@@ -17,7 +17,7 @@
                 <div class="card-body align-items-center d-flex flex-column justify-content-center">
                     <a href="index.php?page=visualizarproducto&ProductoId={{ProductoId}}"><img class="card-img-top mb-4" src="{{MediaPath}}" alt="{{MediaDoc}}" style="width: 200px"></a>
                     <h4 class="card-title text-center mb-4">
-                        <a href="index.php?page=visualizarproducto&ProductoId={{ProductoId}}">{{ProductoNombre}}</a>
+                        <a href="index.php?page=visualizarproducto&ProductoId={{ProductoId}}" style="color: #40c224">{{ProductoNombre}}</a>
                     </h4>
                     <!--<h5 class="mb-4">Lps. {{ProductoPrecioVenta}}</h5>-->
                     <p class="card-text">{{ProductoDescripcion}}</p>

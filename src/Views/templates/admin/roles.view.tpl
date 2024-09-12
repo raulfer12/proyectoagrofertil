@@ -29,7 +29,7 @@
         {{foreach items}}
           <tr>
             <td class="text-center align-middle">{{RolId}}</td>
-            <td class="text-center align-middle"><a href="index.php?page=admin_rol&mode=DSP&RolId={{RolId}}">{{RolDsc}}</a></td>
+            <td class="text-center align-middle"><a href="index.php?page=admin_rol&mode=DSP&RolId={{RolId}}" style="color: #40c224">{{RolDsc}}</a></td>
             <td class="text-center align-middle">{{RolEst}}</td>
             <td class="text-center align-middle">
               <form action="index.php" method="get">

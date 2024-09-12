@@ -30,7 +30,7 @@
           {{foreach items}}
             <tr>
               <td class="text-center align-middle">{{RolId}}</td>
-              <td class="text-center align-middle"><a href="index.php?page=admin_funcionrol&mode=DSP&RolId={{RolId}}&FuncionId={{FuncionId}}">{{FuncionId}}</a></td>
+              <td class="text-center align-middle"><a href="index.php?page=admin_funcionrol&mode=DSP&RolId={{RolId}}&FuncionId={{FuncionId}}" style="color: #40c224">{{FuncionId}}</a></td>
               <td class="text-center align-middle">{{FuncionRolEst}}</td>
               <td class="text-center align-middle">{{FuncionExp}}</td>
               <td class="text-center align-middle">

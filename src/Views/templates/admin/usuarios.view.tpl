@@ -36,7 +36,7 @@
           <tr>
             <td class="text-center align-middle">{{UsuarioId}}</td>
             <td class="text-center align-middle">{{UsuarioEmail}}</td>
-            <td class="text-center align-middle"><a href="index.php?page=admin_usuario&mode=DSP&UsuarioId={{UsuarioId}}">{{UsuarioNombre}}</a></td>
+            <td class="text-center align-middle"><a href="index.php?page=admin_usuario&mode=DSP&UsuarioId={{UsuarioId}}" style="color: #40c224">{{UsuarioNombre}}</a></td>
             <td class="text-center align-middle">{{UsuarioFching}}</td>
             <td class="text-center align-middle">{{UsuarioPswdEst}}</td>
             <td class="text-center align-middle">{{UsuarioPswdExp}}</td>
