@@ -7,14 +7,14 @@ class Pedidos extends \Dao\Table
     public static function getAll()
     {
         return self::obtenerRegistros("SELECT v.*, u.UsuarioNombre FROM Ventas v
-        INNER JOIN usuarios u on v.UsuarioId = u.UsuarioId
+        INNER JOIN usuarios_agrofertil u on v.UsuarioId = u.UsuarioId
         WHERE VentaEst='PND';", array());
     }
 
     public static function getOne($VentaId)
     {
         $sqlstr = "SELECT v.*, u.UsuarioNombre FROM Ventas v
-        INNER JOIN usuarios u on v.UsuarioId = u.UsuarioId
+        INNER JOIN usuarios_agrofertil u on v.UsuarioId = u.UsuarioId
         WHERE VentaId=:VentaId;";
         return self::obtenerUnRegistro($sqlstr, array("VentaId"=>$VentaId));
     }

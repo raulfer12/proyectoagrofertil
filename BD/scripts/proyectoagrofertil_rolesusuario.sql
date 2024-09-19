@@ -19,17 +19,17 @@
 -- Table structure for table `rolesusuario`
 --
 
-DROP TABLE IF EXISTS `rolesusuario`;
+DROP TABLE IF EXISTS `rolesusuario_agrofertil`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `rolesusuario` (
+CREATE TABLE `rolesusuario_agrofertil` (
   `UsuarioId` int NOT NULL,
   `RolId` varchar(15) NOT NULL,
   `RolUsuarioEst` char(3) NOT NULL,
   `RolUsuarioFch` datetime NOT NULL,
   `RolUsuarioExp` datetime NOT NULL,
   PRIMARY KEY (`UsuarioId`,`RolId`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

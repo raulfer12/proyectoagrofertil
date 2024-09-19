@@ -6,7 +6,7 @@ class Productos extends \Dao\Table
 {
     public static function getAll()
     {
-        return self::obtenerRegistros("SELECT * FROM agrofertil.productos", array());
+        return self::obtenerRegistros("SELECT * FROM agrofertil.productos_agrofertil", array());
     }
 
     public static function getOne($ProductoId)
@@ -22,7 +22,7 @@ class Productos extends \Dao\Table
     public static function insert($ProductoNombre, $ProductoDescripcion, $ProductoPrecioVenta,
     $ProductoPrecioCompra, $ProductoEst, $ProductoStock)
     {
-        $insstr = "INSERT INTO agrofertil.productos (ProductoNombre, ProductoDescripcion, ProductoPrecioVenta,
+        $insstr = "INSERT INTO agrofertil.productos_agrofertil (ProductoNombre, ProductoDescripcion, ProductoPrecioVenta,
         ProductoPrecioCompra, ProductoEst, ProductoStock)
         values (:ProductoNombre, :ProductoDescripcion, :ProductoPrecioVenta, :ProductoPrecioCompra, :ProductoEst,
         :ProductoStock);";
@@ -42,7 +42,7 @@ class Productos extends \Dao\Table
     public static function update($ProductoNombre, $ProductoDescripcion, $ProductoPrecioVenta,
     $ProductoPrecioCompra, $ProductoEst, $ProductoStock, $ProductoId)
     {
-        $updsql = "UPDATE productos
+        $updsql = "UPDATE productos_agrofertil
         SET ProductoNombre=:ProductoNombre, ProductoDescripcion=:ProductoDescripcion,
         ProductoPrecioVenta=:ProductoPrecioVenta, ProductoPrecioCompra=:ProductoPrecioCompra,
         ProductoEst=:ProductoEst, ProductoStock=:ProductoStock
@@ -63,7 +63,7 @@ class Productos extends \Dao\Table
 
     public static function delete( $ProductoId)
     {
-        $delsql = "delete from productos where ProductoId=:ProductoId;";
+        $delsql = "delete from productos_agrofertil where ProductoId=:ProductoId;";
         return self::executeNonQuery(
             $delsql,
             array( "ProductoId" => $ProductoId)
@@ -72,7 +72,7 @@ class Productos extends \Dao\Table
 
     static public function searchproductos($ProductBusqueda)
     {
-        $sqlstr = "SELECT * FROM productos
+        $sqlstr = "SELECT * FROM productos_agrofertil
         WHERE ProductoNombre LIKE :ProductBusqueda
         OR ProductoPrecioVenta LIKE :ProductoBusqueda
         OR ProductoEst LIKE :ProductBusqueda;";

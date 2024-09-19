@@ -5,18 +5,18 @@ class FuncionesRoles extends \Dao\Table
 {
     public static function getAll()
     {
-        return self::obtenerRegistros("SELECT * FROM funcionesroles;", array());
+        return self::obtenerRegistros("SELECT * FROM funcionesroles_agrofertil;", array());
     }
 
     public static function getOne($RolId, $FuncionId)
     {
-        $sqlstr = "SELECT * FROM funcionesroles WHERE RolId=:RolId AND FuncionId=:FuncionId;";
+        $sqlstr = "SELECT * FROM funcionesroles_agrofertil WHERE RolId=:RolId AND FuncionId=:FuncionId;";
         return self::obtenerUnRegistro($sqlstr, array("RolId"=>$RolId, "FuncionId"=>$FuncionId));
     }
 
     public static function insert($RolId, $FuncionId)
     {
-        $insstr = "INSERT INTO funcionesroles VALUES (:RolId, :FuncionId, :FuncionRolEst, :FuncionExp);";
+        $insstr = "INSERT INTO funcionesroles_agrofertil VALUES (:RolId, :FuncionId, :FuncionRolEst, :FuncionExp);";
         return self::executeNonQuery(
             $insstr,
             array("RolId"=>$RolId, "FuncionId"=>$FuncionId, "FuncionRolEst"=>Estados::ACTIVO,
@@ -26,7 +26,7 @@ class FuncionesRoles extends \Dao\Table
 
     public static function update($RolId, $FuncionId, $FuncionRolEst, $FuncionExp)
     {
-        $updsql = "UPDATE funcionesroles SET FuncionRolEst=:FuncionRolEst, FuncionExp=:FuncionExp
+        $updsql = "UPDATE funcionesroles_agrofertil SET FuncionRolEst=:FuncionRolEst, FuncionExp=:FuncionExp
         WHERE RolId=:RolId AND FuncionId=:FuncionId;";
         return self::executeNonQuery(
             $updsql,
@@ -37,7 +37,7 @@ class FuncionesRoles extends \Dao\Table
 
     public static function delete($RolId, $FuncionId)
     {
-        $delsql = "DELETE FROM funcionesroles WHERE RolId=:RolId AND FuncionId=:FuncionId;";
+        $delsql = "DELETE FROM funcionesroles_agrofertil WHERE RolId=:RolId AND FuncionId=:FuncionId;";
         return self::executeNonQuery(
             $delsql,
             array("RolId" => $RolId, "FuncionId" => $FuncionId)
@@ -46,7 +46,7 @@ class FuncionesRoles extends \Dao\Table
 
     static public function searchFuncionesRoles($UsuarioBusqueda)
     {
-        $sqlstr = "SELECT * FROM funcionesroles WHERE RolId LIKE :UsuarioBusqueda
+        $sqlstr = "SELECT * FROM funcionesroles_agrofertil WHERE RolId LIKE :UsuarioBusqueda
         OR FuncionId LIKE :UsuarioBusqueda OR FuncionRolEst LIKE :UsuarioBusqueda OR FuncionExp LIKE :UsuarioBusqueda;";
         
         return self::obtenerRegistros($sqlstr, array("UsuarioBusqueda"=>"%".$UsuarioBusqueda."%"));
@@ -54,12 +54,12 @@ class FuncionesRoles extends \Dao\Table
 
     static public function getRoles()
     {
-        return self::obtenerRegistros("SELECT * FROM roles WHERE RolEst = 'ACT';", array());
+        return self::obtenerRegistros("SELECT * FROM roles_agrofertil WHERE RolEst = 'ACT';", array());
     }
 
     static public function getFunciones()
     {
-        return self::obtenerRegistros("SELECT * FROM funciones WHERE FuncionEst = 'ACT';", array());
+        return self::obtenerRegistros("SELECT * FROM funciones_agrofertil WHERE FuncionEst = 'ACT';", array());
     }
 
 }

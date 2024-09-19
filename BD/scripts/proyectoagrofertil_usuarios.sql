@@ -19,10 +19,10 @@
 -- Table structure for table `usuarios`
 --
 
-DROP TABLE IF EXISTS `usuarios`;
+DROP TABLE IF EXISTS `usuarios_agrofertil`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `usuarios` (
+CREATE TABLE `usuarios_agrofertil` (
   `UsuarioId` int NOT NULL AUTO_INCREMENT,
   `UsuarioEmail` varchar(80) NOT NULL,
   `UsuarioNombre` varchar(80) NOT NULL,
@@ -38,7 +38,7 @@ CREATE TABLE `usuarios` (
   `ClienteTelefono` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`UsuarioId`),
   UNIQUE KEY `UsuarioEmail_UNIQUE` (`UsuarioEmail`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

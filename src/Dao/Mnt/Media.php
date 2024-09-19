@@ -6,7 +6,7 @@ class Media extends \Dao\Table
 {
     public static function getAll($ProductoId)
     {
-        $sqlstr = "Select * from media where ProductoId=:ProductoId;";
+        $sqlstr = "Select * from media_agrofertil where ProductoId=:ProductoId;";
         return self::obtenerRegistros($sqlstr, array("ProductoId"=>$ProductoId));
     }
 
@@ -18,7 +18,7 @@ class Media extends \Dao\Table
             $ProductoId = $item["ProductoId"];
         }
         
-        $insstr = "INSERT INTO media (MediaDoc, MediaPath, ProductoId) values (:MediaDoc, :MediaPath, :ProductoId);";
+        $insstr = "INSERT INTO media_agrofertil (MediaDoc, MediaPath, ProductoId) values (:MediaDoc, :MediaPath, :ProductoId);";
         return self::executeNonQuery(
             $insstr,
             array(
@@ -31,7 +31,7 @@ class Media extends \Dao\Table
 
     public static function update($MediaDoc, $MediaPath, $ProductoId)
     {
-        $updsql = "INSERT INTO media (MediaDoc, MediaPath, ProductoId) values (:MediaDoc, :MediaPath, :ProductoId);";
+        $updsql = "INSERT INTO media_agrofertil (MediaDoc, MediaPath, ProductoId) values (:MediaDoc, :MediaPath, :ProductoId);";
         return self::executeNonQuery(
             $updsql,
             array(
@@ -44,7 +44,7 @@ class Media extends \Dao\Table
 
     public static function delete($ProductoId, $MediaId)
     {
-        $delsql = "DELETE from media where ProductoId=:ProductoId and MediaId=:MediaId;";
+        $delsql = "DELETE from media_agrofertil where ProductoId=:ProductoId and MediaId=:MediaId;";
         return self::executeNonQuery(
             $delsql,
             array(

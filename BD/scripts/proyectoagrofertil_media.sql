@@ -19,16 +19,16 @@
 -- Table structure for table `media`
 --
 
-DROP TABLE IF EXISTS `media`;
+DROP TABLE IF EXISTS `media_agrofertil`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `media` (
+CREATE TABLE `media_agrofertil` (
   `MediaId` int NOT NULL AUTO_INCREMENT,
   `MediaDoc` varchar(80) NOT NULL,
   `MediaPath` varchar(150) NOT NULL,
   `ProductoId` int DEFAULT NULL,
   PRIMARY KEY (`MediaId`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

@@ -16,7 +16,7 @@
     {
         public static function getAll()
         {
-            return self::obtenerRegistros("SELECT * FROM usuarios ORDER BY UsuarioTipo;;", array());
+            return self::obtenerRegistros("SELECT * FROM usuarios_agrofertil ORDER BY UsuarioTipo;;", array());
         }
 
         static public function newUsuarioClient($UsuarioEmail, $UsuarioNombre, $UsuarioPswd)
@@ -47,7 +47,7 @@
             $usuario["UsuarioActCod"] = hash("sha256", $UsuarioEmail.time());
             $usuario["UsuarioTipo"] = UsuarioTipo::PUBLICO;
 
-            $sqlIns = "INSERT INTO `usuarios` (`UsuarioEmail`, `UsuarioNombre`, `UsuarioPswd`,
+            $sqlIns = "INSERT INTO `usuarios_agrofertil` (`UsuarioEmail`, `UsuarioNombre`, `UsuarioPswd`,
                 `UsuarioFching`, `UsuarioPswdEst`, `UsuarioPswdExp`, `UsuarioEst`, `UsuarioActCod`,
                 `UsuarioPswdChg`, `UsuarioTipo`)
                 VALUES
@@ -87,7 +87,7 @@
             $usuario["UsuarioActCod"] = hash("sha256", $UsuarioEmail.time());
             $usuario["UsuarioTipo"] = $UsuarioTipo;
 
-            $sqlIns = "INSERT INTO `usuarios` (`UsuarioEmail`, `UsuarioNombre`, `UsuarioPswd`,
+            $sqlIns = "INSERT INTO `usuarios_agrofertil` (`UsuarioEmail`, `UsuarioNombre`, `UsuarioPswd`,
                 `UsuarioFching`, `UsuarioPswdEst`, `UsuarioPswdExp`, `UsuarioEst`, `UsuarioActCod`,
                 `UsuarioPswdChg`, `UsuarioTipo`)
                 VALUES
@@ -123,7 +123,7 @@
             $usuario["UsuarioActCod"] = hash("sha256", $UsuarioEmail.time());
             $usuario["UsuarioTipo"] = $UsuarioTipo;
 
-            $sqlIns = "UPDATE `usuarios` SET UsuarioEmail=:UsuarioEmail, UsuarioNombre=:UsuarioNombre, 
+            $sqlIns = "UPDATE `usuarios_agrofertil` SET UsuarioEmail=:UsuarioEmail, UsuarioNombre=:UsuarioNombre, 
             UsuarioEst=:UsuarioEst, UsuarioActCod=:UsuarioActCod, UsuarioTipo=:UsuarioTipo
             WHERE UsuarioId=:UsuarioId";
 
@@ -160,7 +160,7 @@
             $usuario["UsuarioActCod"] = hash("sha256", $UsuarioEmail.time());
             $usuario["UsuarioTipo"] = $UsuarioTipo;
 
-            $sqlIns = "UPDATE `usuarios` SET `UsuarioEmail`=:UsuarioEmail, `UsuarioNombre`=:UsuarioNombre, 
+            $sqlIns = "UPDATE `usuarios_agrofertil` SET `UsuarioEmail`=:UsuarioEmail, `UsuarioNombre`=:UsuarioNombre, 
             `UsuarioPswd`=:UsuarioPswd, `UsuarioPswdEst`=:UsuarioPswdEst, `UsuarioPswdExp`=:UsuarioPswdExp, 
             `UsuarioEst`=:UsuarioEst, `UsuarioActCod`=:UsuarioActCod, `UsuarioPswdChg`=now(), `UsuarioTipo`=:UsuarioTipo
             WHERE UsuarioId=:UsuarioId;";
@@ -169,7 +169,7 @@
 
         public static function deleteUsuarioAdmin($UsuarioId)
         {
-            $delsql = "DELETE FROM usuarios WHERE UsuarioId=:UsuarioId;";
+            $delsql = "DELETE FROM usuarios_agrofertil WHERE UsuarioId=:UsuarioId;";
             return self::executeNonQuery
             (
                 $delsql,
@@ -179,13 +179,13 @@
 
         public static function getUsuariobyId($UsuarioId)
         {
-            $sqlstr = "SELECT * FROM usuarios WHERE UsuarioId = :UsuarioId LIMIT 1;";
+            $sqlstr = "SELECT * FROM usuarios_agrofertil WHERE UsuarioId = :UsuarioId LIMIT 1;";
             return self::obtenerUnRegistro($sqlstr, array("UsuarioId"=>$UsuarioId));
         }
 
         static public function getUsuarioByEmail($UsuarioEmail)
         {
-            $sqlstr = "SELECT * FROM `usuarios`
+            $sqlstr = "SELECT * FROM `usuarios_agrofertil`
             WHERE `UsuarioEmail` = :UsuarioEmail ;";
             $params = array("UsuarioEmail"=>$UsuarioEmail);
 
@@ -194,7 +194,7 @@
 
         public static function getUsuarioDifferbyEmail($UsuarioId, $UsuarioEmail)
         {
-            $sqlstr = "SELECT * FROM usuarios
+            $sqlstr = "SELECT * FROM usuarios_agrofertil
             WHERE UsuarioId!=:UsuarioId AND UsuarioEmail=:UsuarioEmail";
             return self::obtenerRegistros($sqlstr, array("UsuarioId"=>$UsuarioId, "UsuarioEmail"=>$UsuarioEmail));
         }
@@ -240,7 +240,7 @@
 
         static public function getFeature($FuncionId)
         {
-            $sqlstr = "SELECT * FROM funciones
+            $sqlstr = "SELECT * FROM funciones_agrofertil
             WHERE FuncionId=:FuncionId;";
             $featuresList = self::obtenerRegistros($sqlstr, array("FuncionId"=>$FuncionId));
             return count($featuresList) > 0;
@@ -248,7 +248,7 @@
 
         static public function addNewFeature($FuncionId, $FuncionDsc, $FuncionEst, $FuncionTipo)
         {
-            $sqlins = "INSERT INTO `funciones` (`FuncionId`, `FuncionDsc`, `FuncionEst`, `FuncionTipo`)
+            $sqlins = "INSERT INTO `funciones_agrofertil` (`FuncionId`, `FuncionDsc`, `FuncionEst`, `FuncionTipo`)
                 VALUES (:FuncionId , :FuncionDsc , :FuncionEst , :FuncionTipo);";
 
             return self::executeNonQuery(
@@ -264,7 +264,7 @@
 
         static public function getFeatureByUsuario($UsuarioId, $FuncionId)
         {
-            $sqlstr = "SELECT * FROM funcionesroles a
+            $sqlstr = "SELECT * FROM funcionesroles_agrofertil a
             INNER JOIN rolesusuario b ON a.RolId = b.RolId
             WHERE a.FuncionRolEst = 'ACT' AND b.UsuarioId=:UsuarioId AND a.FuncionId=:FuncionId LIMIT 1;";
             $resultados = self::obtenerRegistros(
@@ -279,14 +279,14 @@
 
         static public function getRol($RolId)
         {
-            $sqlstr = "SELECT * FROM roles WHERE RolId=:RolId;";
+            $sqlstr = "SELECT * FROM roles_agrofertil WHERE RolId=:RolId;";
             $featuresList = self::obtenerRegistros($sqlstr, array("RolId" => $RolId));
             return count($featuresList) > 0;
         }
 
         static public function addNewRol($RolId, $RolDsc, $RolEst)
         {
-            $sqlins = "INSERT INTO `roles` (`RolId`, `RolDsc`, `RolEst`)
+            $sqlins = "INSERT INTO `roles_agrofertil` (`RolId`, `RolDsc`, `RolEst`)
             VALUES (:RolId, :RolDsc, :RolEst);";
 
             return self::executeNonQuery(
@@ -301,7 +301,7 @@
         
         static public function getRolesByUsuario($UsuarioId, $RolId)
         {
-            $sqlstr = "SELECT * FROM roles a
+            $sqlstr = "SELECT * FROM roles_agrofertil a
             INNER JOIN rolesusuario b ON a.RolId = b.RolId
             WHERE a.RolEst = 'ACT' AND b.UsuarioId=:UsuarioId AND a.RolId=:RolId LIMIT 1;";
             $resultados = self::obtenerRegistros(
@@ -316,7 +316,7 @@
 
         static public function getFuncionesByRolesUsuario($UsuarioId, $RolId)
         {
-            $sqlstr = "SELECT * FROM roles a
+            $sqlstr = "SELECT * FROM roles_agrofertil a
             INNER JOIN rolesusuario b ON a.RolId = b.RolId
             WHERE a.RolEst = 'ACT' AND b.UsuarioId=:UsuarioId AND a.RolId=:RolId LIMIT 1;";
             $resultados = self::obtenerRegistros(
@@ -331,7 +331,7 @@
 
         static public function searchUsuarios($UsuarioBusqueda)
         {
-            $sqlstr = "SELECT * FROM usuarios
+            $sqlstr = "SELECT * FROM usuarios_agrofertil
             WHERE UsuarioEmail LIKE :UsuarioBusqueda
             OR UsuarioNombre LIKE :UsuarioBusqueda
             OR UsuarioFching LIKE :UsuarioBusqueda

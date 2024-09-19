@@ -19,10 +19,10 @@
 -- Table structure for table `productos`
 --
 
-DROP TABLE IF EXISTS `productos`;
+DROP TABLE IF EXISTS `productos_agrofertil`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `productos` (
+CREATE TABLE `productos_agrofertil` (
   `ProductoId` int NOT NULL AUTO_INCREMENT,
   `ProductoNombre` varchar(120) NOT NULL,
   `ProductoDescripcion` varchar(1000) NOT NULL,
@@ -31,7 +31,7 @@ CREATE TABLE `productos` (
   `ProductoEst` char(3) NOT NULL,
   `ProductoStock` int NOT NULL,
   PRIMARY KEY (`ProductoId`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

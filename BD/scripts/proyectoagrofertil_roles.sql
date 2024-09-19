@@ -19,15 +19,15 @@
 -- Table structure for table `roles`
 --
 
-DROP TABLE IF EXISTS `roles`;
+DROP TABLE IF EXISTS `roles_agrofertil`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `roles` (
+CREATE TABLE `roles_agrofertil` (
   `RolId` varchar(15) NOT NULL,
   `RolDsc` varchar(45) NOT NULL,
   `RolEst` char(5) NOT NULL,
   PRIMARY KEY (`RolId`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
