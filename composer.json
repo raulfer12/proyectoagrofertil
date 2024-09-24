@@ -1,6 +1,11 @@
 {
     "autoload": {
-      "psr-0": {"":"src/"}
+      "psr-4": {
+        "Controllers\\": "src/Controllers/",
+        "Dao\\": "src/Dao/",
+        "Utilities\\": "src/Utilities/",
+        "Views\\": "src/Views/"
+      }
     },
     "require": {
         "phpdocumentor/phpdocumentor": "^3.0",
