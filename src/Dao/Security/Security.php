@@ -265,7 +265,7 @@
         static public function getFeatureByUsuario($UsuarioId, $FuncionId)
         {
             $sqlstr = "SELECT * FROM funcionesroles_agrofertil a
-            INNER JOIN rolesusuario b ON a.RolId = b.RolId
+            INNER JOIN rolesusuario_agrofertil b ON a.RolId = b.RolId
             WHERE a.FuncionRolEst = 'ACT' AND b.UsuarioId=:UsuarioId AND a.FuncionId=:FuncionId LIMIT 1;";
             $resultados = self::obtenerRegistros(
                 $sqlstr,
@@ -302,7 +302,7 @@
         static public function getRolesByUsuario($UsuarioId, $RolId)
         {
             $sqlstr = "SELECT * FROM roles_agrofertil a
-            INNER JOIN rolesusuario b ON a.RolId = b.RolId
+            INNER JOIN rolesusuario_agrofertil b ON a.RolId = b.RolId
             WHERE a.RolEst = 'ACT' AND b.UsuarioId=:UsuarioId AND a.RolId=:RolId LIMIT 1;";
             $resultados = self::obtenerRegistros(
                 $sqlstr,
@@ -317,7 +317,7 @@
         static public function getFuncionesByRolesUsuario($UsuarioId, $RolId)
         {
             $sqlstr = "SELECT * FROM roles_agrofertil a
-            INNER JOIN rolesusuario b ON a.RolId = b.RolId
+            INNER JOIN rolesusuario_agrofertil b ON a.RolId = b.RolId
             WHERE a.RolEst = 'ACT' AND b.UsuarioId=:UsuarioId AND a.RolId=:RolId LIMIT 1;";
             $resultados = self::obtenerRegistros(
                 $sqlstr,
