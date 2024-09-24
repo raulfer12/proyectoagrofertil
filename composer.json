@@ -5,7 +5,8 @@
         "Dao\\": "src/Dao/",
         "Utilities\\": "src/Utilities/",
         "Views\\": "src/Views/"
-      }
+      },
+      "classmap": ["src/"]
     },
     "require": {
         "phpdocumentor/phpdocumentor": "^3.0",

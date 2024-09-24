@@ -12,17 +12,17 @@ class Site
     }
     public static function getPageRequest()
     {
-        $pageRequest = "index";
+        $pageRequest = "Index";  
         if (\Utilities\Security::isLogged()) {
-            $pageRequest = "admin\\admin";
+            $pageRequest = "Admin\\Admin";  
         }
         if (isset($_GET["page"])) {
             $pageRequest = str_replace(array("_", "-", "."), "\\", $_GET["page"]);
+            $pageRequest = ucwords($pageRequest, "\\"); 
         }
         Context::setArrayToContext($_GET);
         Context::setContext("request_uri", $_SERVER["REQUEST_URI"]);
         return "Controllers\\" . $pageRequest;
-        //  \\Controllers\\rpts\\reportusers
     }
     public static function redirectTo($url)
     {
